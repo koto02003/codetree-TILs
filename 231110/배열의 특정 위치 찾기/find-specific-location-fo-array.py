@@ -9,4 +9,4 @@ for i in range(1, 11):
 
 avg /= 3
 
-print(add, avg)
+print("%d %.1f" %(add, avg))
