@@ -10,7 +10,6 @@ while(True):
         if(count == 2):
             break
     n += i
-    print(arr)
     
 for i in arr:
     print(i, end = ' ')
