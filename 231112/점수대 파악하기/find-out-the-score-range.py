@@ -6,5 +6,5 @@ for i in inp:
     i /= 10
     arr[int(i - 1)] += 1
 
-for i in range(9, -1, -1):
+for i in range(len(arr) - 1, -1, -1):
     print(f"{(i + 1) * 10} - {arr[i]}")
