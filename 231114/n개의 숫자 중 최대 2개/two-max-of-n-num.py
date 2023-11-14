@@ -1,8 +1,8 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-maxNum1 = arr[1]
-maxNum2 = arr[0]
+maxNum1 = arr[0]
+maxNum2 = arr[1]
 
 
 for i in range(2, n):
