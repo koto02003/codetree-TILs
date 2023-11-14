@@ -17,6 +17,7 @@ for i in range(q):
             print(0)
         else:
             print(find)
-    else:
-        for j in range(int(question[1]), int(question[2]) + 1):
-            print(elements[j - 1], end = ' ')
+    elif question[0] == '3':
+        for z in range(int(question[1]), int(question[2]) + 1): 
+            print(elements[z - 1], end = ' ')
+        print()
