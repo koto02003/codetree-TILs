@@ -1,18 +1,19 @@
 n = int(input())
 arr = list(map(int, input().split()))
-if arr[0] > arr[1]:
-    maxNum1 = arr[0]
-    maxNum2 = arr[1]
-else:
-    maxNum1 = arr[1]
-    maxNum2 = arr[0]
+maxNum = arr[0]
+maxIndex = -1
+maxIndex2 = -1
+for i in range(1, n):
+    if maxNum < arr[i]:
+        maxIndex = i
+        maxNum = arr[i]
 
-for i in range(2, n):
-    if maxNum1 < arr[i]:
-        maxNum1 = arr[i]
+maxNum = arr[0]
+for i in range(1, n):
+    if i == maxIndex:
+        continue
+    if maxNum < arr[i]:
+        maxIndex2 = i
+        maxNum = arr[i]
 
-for i in range(2, n):
-    if maxNum2 < arr[i] and maxNum1 != arr[i]:
-        maxNum2 = arr[i]
-
-print(maxNum1, maxNum2)
+print(arr[maxIndex], arr[maxIndex2])
