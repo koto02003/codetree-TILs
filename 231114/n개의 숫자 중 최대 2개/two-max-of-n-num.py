@@ -10,7 +10,9 @@ else:
 for i in range(2, n):
     if maxNum1 < arr[i]:
         maxNum1 = arr[i]
-    elif maxNum2 < arr[i]:
+
+for i in range(2, n):
+    if maxNum2 < arr[i] and maxNum1 != arr[i]:
         maxNum2 = arr[i]
 
 print(maxNum1, maxNum2)
